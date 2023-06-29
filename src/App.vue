@@ -3,10 +3,15 @@
 </script>
 
 <template>
-<!--一级路由出口组件-->
+  <!--一级路由出口组件-->
   <RouterView/>
+  <div class="test">
+    test scss
+  </div>
 </template>
 
-<style scoped>
-
+<style scoped lang="scss">
+.test {
+  color: $sucColor;
+}
 </style>
