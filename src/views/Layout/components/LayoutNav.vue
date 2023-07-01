@@ -48,7 +48,7 @@
 
         i {
           font-size: 14px;
-          margin-right: 2px;
+          margin-right: 5px;
         }
 
         &:hover {
