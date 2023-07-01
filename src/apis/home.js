@@ -7,7 +7,6 @@ export function getBannerAPI () {
 
 /**
  * @description: 获取新鲜好物
- * @param {*}
  * @return {*}
  */
 export const findNewAPI = () => {
@@ -16,7 +15,6 @@ export const findNewAPI = () => {
 
 /**
  * @description: 获取人气推荐
- * @param {*}
  * @return {*}
  */
 export const getHotAPI = () => {
@@ -25,7 +23,6 @@ export const getHotAPI = () => {
 
 /**
  * @description: 获取所有商品模块
- * @param {*}
  * @return {*}
  */
 export const getGoodsAPI = () => {
