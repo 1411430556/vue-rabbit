@@ -1,8 +1,14 @@
 import httpInstance from '@/utils/http'
 
-// 获取 banner
-export function getBannerAPI () {
-  return httpInstance.get('/home/banner')
+/**
+ * @description: 获取 banner
+ * @param params
+ * @returns {Promise<httpInstance.AxiosResponse<any>>}
+ */
+export function getBannerAPI (params = {}) {
+  // 默认为1 商品为2
+  const { distributionSite = '1' } = params
+  return httpInstance.get(`/home/banner/?distributionSite=${distributionSite}`)
 }
 
 /**
@@ -18,7 +24,7 @@ export const findNewAPI = () => {
  * @return {*}
  */
 export const getHotAPI = () => {
-  return  httpInstance.get('home/hot')
+  return httpInstance.get('home/hot')
 }
 
 /**
