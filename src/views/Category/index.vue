@@ -1,29 +1,21 @@
 <script setup>
-import { getCategoryAPI } from '@/apis/category'
-import { onMounted, watch, ref } from 'vue'
-import { useRoute } from 'vue-router'
-import { getBannerAPI } from '@/apis/home'
 import GoodsItem from '@/views/Home/components/GoodsItem.vue'
+import { useBanner } from '@/views/Category/composables/useBanner'
+import { useCategory } from '@/views/Category/composables/useCategory'
 
-// 获取数据
-const categoryData = ref({})
-const route = useRoute()
-const getCategory = async () => {
-  const res = await getCategoryAPI(route.params.id)
-  categoryData.value = res.result
-}
-watch(route, () => getCategory())
+// 获取分类数据
+// 使用 onBeforeRouteUpdate 的方法
+const { categoryData } = useCategory()
 
-onMounted(() => getCategory())
+// 下面这是用 watch 的方法
+// const getCategory = async () => {
+//   const res = await getCategoryAPI(route.params.id)
+//   categoryData.value = res.result
+// }
+// watch(route, () => getCategory())
 
 // 获取 banner
-const bannerList = ref([])
-const getBanner = async () => {
-  const res = await getBannerAPI({ distributionSite: '2' })
-  bannerList.value = res.result
-}
-
-onMounted(() => getBanner())
+const { bannerList } = useBanner()
 </script>
 
 <template>
