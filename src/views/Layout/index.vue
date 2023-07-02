@@ -14,8 +14,6 @@ categoryStore.getCategory()
   <LayoutFixed/>
   <LayoutNav/>
   <LayoutHeader/>
-  <!--添加 key 破坏复用机制，强制销毁重建，这样点击上面分类就可以更新页面内容-->
-  <!--<RouterView :key="$route.fullPath"/>-->
   <RouterView/>
   <LayoutFooter/>
 </template>
