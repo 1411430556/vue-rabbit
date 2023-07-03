@@ -33,7 +33,7 @@ const router = createRouter({
         {
           path: 'detail/:id',
           component: Detail,
-        }
+        },
       ],
     },
     {
@@ -42,12 +42,16 @@ const router = createRouter({
     },
   ],
   // 路由滚动行为定制
-  scrollBehavior() {
-    return {
-      top: 0,
-      behavior: 'smooth',
+  scrollBehavior (to, from, savePosition) {
+    if (savePosition) {
+      return savePosition
+    } else {
+      return {
+        top: 0,
+        behavior: 'smooth',
+      }
     }
-  }
+  },
 })
 
 // 路由滚动行为定制
