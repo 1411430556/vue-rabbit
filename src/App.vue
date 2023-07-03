@@ -23,8 +23,40 @@
   </el-backtop>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .test {
   color: $sucColor;
+}
+
+/*全局滚动条样式*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #737373;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+::-webkit-resizer {
+  display: none;
 }
 </style>

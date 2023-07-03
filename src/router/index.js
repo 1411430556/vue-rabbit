@@ -36,13 +36,21 @@ const router = createRouter({
       component: Login,
     },
   ],
+  // 路由滚动行为定制
+  scrollBehavior() {
+    return {
+      top: 0,
+      behavior: 'smooth',
+    }
+  }
 })
 
-router.afterEach(() => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  })
-})
+// 路由滚动行为定制
+// router.afterEach(() => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth',
+//   })
+// })
 
 export default router
