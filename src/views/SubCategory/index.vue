@@ -41,7 +41,7 @@ const load = async () => {
   const loading = ElLoading.service({
     text: 'Loading',
     fullscreen: true,
-    background: 'rgba(0, 0, 0, 0.6)',
+    background: 'rgba(255, 255, 255, 0.7)',
   })
   // 获取下一页的数据
   reqData.value.page++
