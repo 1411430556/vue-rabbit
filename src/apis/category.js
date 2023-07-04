@@ -1,7 +1,7 @@
 import httpInstance from '@/utils/http'
 
 /**
- * @description: 获取分类数据
+ * @description获取分类数据
  * @param {*} id 分类id
  * @returns {Promise<httpInstance.AxiosResponse<any>>}
  */
@@ -10,7 +10,7 @@ export function getCategoryAPI (id) {
 }
 
 /**
- * @description: 获取二级分类列表数据
+ * @description获取二级分类列表数据
  * @param {*} id 分类id
  * @return {*}
  */
@@ -19,7 +19,7 @@ export const getCategoryFilterAPI = (id) => {
 }
 
 /**
- * @description: 获取导航数据
+ * @description获取导航数据
  * @data {
      categoryId: 1005000 ,
      page: 1,

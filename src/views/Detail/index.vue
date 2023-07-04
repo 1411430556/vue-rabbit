@@ -2,6 +2,7 @@
 import { getDetail } from '@/apis/detail'
 import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import DetailHot from '@/views/Detail/components/DetailHot.vue'
 
 const route = useRoute()
 
@@ -93,9 +94,9 @@ onMounted(() => getGoods())
 
               <!-- 按钮组件 -->
               <div>
-                  <el-button size="large" class="btn">
-                    加入购物车
-                  </el-button>
+                <el-button size="large" class="btn">
+                  加入购物车
+                </el-button>
               </div>
 
             </div>
@@ -122,7 +123,10 @@ onMounted(() => getGoods())
             </div>
             <!-- 24热榜+专题推荐 -->
             <div class="goods-aside">
-
+              <!--24小时-->
+              <DetailHot/>
+              <!--周-->
+              <DetailHot/>
             </div>
           </div>
         </div>

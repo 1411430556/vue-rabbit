@@ -1,7 +1,7 @@
 import httpInstance from '@/utils/http'
 
 /**
- * @description: 获取 banner
+ * @description获取 banner
  * @param params
  * @returns {Promise<httpInstance.AxiosResponse<any>>}
  */
@@ -12,7 +12,7 @@ export function getBannerAPI (params = {}) {
 }
 
 /**
- * @description: 获取新鲜好物
+ * @description获取新鲜好物
  * @return {*}
  */
 export const findNewAPI = () => {
@@ -20,7 +20,7 @@ export const findNewAPI = () => {
 }
 
 /**
- * @description: 获取人气推荐
+ * @description获取人气推荐
  * @return {*}
  */
 export const getHotAPI = () => {
@@ -28,7 +28,7 @@ export const getHotAPI = () => {
 }
 
 /**
- * @description: 获取所有商品模块
+ * @description获取所有商品模块
  * @return {*}
  */
 export const getGoodsAPI = () => {
