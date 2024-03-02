@@ -1,5 +1,6 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
+import { codeInspectorPlugin } from 'code-inspector-plugin'
 import vue from '@vitejs/plugin-vue'
 // element-plus 按需导入
 import AutoImport from 'unplugin-auto-import/vite'
@@ -18,6 +19,9 @@ export default defineConfig({
         // 1. 配置elementPlus采用sass样式配色系统
         ElementPlusResolver({ importStyle: 'sass' }),
       ],
+    }),
+    codeInspectorPlugin({
+      bundler: 'vite',
     }),
   ],
   resolve: {
