@@ -9,7 +9,6 @@ const getHotList = async () => {
   hotList.value = res.result
 }
 getHotList()
-
 </script>
 
 <template>

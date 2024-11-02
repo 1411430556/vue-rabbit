@@ -17,8 +17,9 @@
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
+    "@locator/runtime": "^0.4.4",
     "@vitejs/plugin-vue": "^4.2.3",
-    "code-inspector-plugin": "^0.9.2",
+    "code-inspector-plugin": "^0.15.2",
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
     "sass": "^1.63.6",
