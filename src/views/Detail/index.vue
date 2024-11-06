@@ -135,7 +135,6 @@ onMounted(() => getGoods())
   </div>
 </template>
 
-
 <style scoped lang='scss'>
 .xtx-goods-page {
   .goods-info {
