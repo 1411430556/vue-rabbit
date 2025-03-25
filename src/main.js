@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import setupLocatorUI from '@locator/runtime'
 import App from './App.vue'
 import router from './router'
 
@@ -9,13 +8,6 @@ import '@/styles/common.scss'
 
 // 引入懒加载指令插件并注册
 import { lazyPlugin } from '@/directives'
-// LocatorUI插件
-if (process.env.NODE_ENV === "development") {
-  setupLocatorUI({
-    adapter: "vue"
-  });
-}
-
 const app = createApp(App)
 
 app.use(createPinia())
